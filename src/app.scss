@@ -1,0 +1,42 @@
+header {
+	height: 100px;
+	background-color: blue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	max-width: 1450px;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 22px;
+	nav {
+		ul {
+			display: flex;
+
+			li {
+				margin: 0 10px;
+				font-size: 22px;
+				a {
+					display: block;
+					color: white;
+					text-decoration: none;
+					transition: 1s;
+					&:hover {
+						color: red;
+						transform: rotate(10deg);
+					}
+				}
+			}
+		}
+	}
+
+	div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}

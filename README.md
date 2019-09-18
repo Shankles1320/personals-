@@ -1,68 +1,118 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ClientSide (FrontEnd)
 
-## Available Scripts
+### dependencies
 
-In the project directory, you can run:
+- axios
+- react-router-dom
+- redux
+- react-redux
+- node-sass
+- http-proxy-middle
 
-### `npm start`
+## routes
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Home => "/" => authComponent.js
+- social_time => "/social_time" => social_time.js
+- Training => "/training" => tainging.js
+- Adoption => "/adoption" => adoption.js
+- Donations => "/donations => donation.js
+- Volunteer => "/volunteer => volunteer.js
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### file-structure
 
-### `npm test`
+- src/
+  - components/
+    - authComponent.js
+    - social_time.js
+    - adoption.js
+    - donation.js
+    - volunteer.js
+  - app.js
+  - index.js
+  - reset.css
+  - setupProxy.js
+  - ducks/
+    - store.js
+    - reducer.js
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## serverside (backend)
 
-### `npm run build`
+### dependencies
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - express
+    - express-session
+    - dotenv
+    - massive
+    - bcrypt
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### server file structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- server/
+  - index.js
+  - controller/
+    - adoption.js
+    - authController.js
+    - schedule.js
+  - middleware/
+    - middleware.js => session check
 
-### `npm run eject`
+### endpoints
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**auth**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- login: => /api/welcome
+- register: => /api/registration
+- logout: => /api/goodbye
+- userSession: => /api/find_the_one
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**cake_burrito endpoints**
+get => /api/get_all_animals
+get => /api/get_the_animal/:id
+post => /api/new_animal
+put => /api/change_animal
+delete => /api/found_a_home
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## secrets
 
-## Learn More
+```text
+CONNECTION_STRING =
+SESSION_SECRET =
+SERVER_PORT =
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Database
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- users
 
-### Code Splitting
+```sql
+create table users(
+    id serial primary key,
+    email text not null unique,
+    password text not null,
+    username text
+);
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
 
-### Analyzing the Bundle Size
+- available_animals
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```sql
+create table animals(
+    id serial primary key,
+    name text not null,
+    breed text not null,
+    description text not null,
+    image text not null
+)
 
-### Making a Progressive Web App
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- take_home
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```sql
+create table take_home(
+id serial primary key,
+take_home_date date default now(),
+animal_id integer references animals(id),
+animal_adopter integer references users(id));
+```
