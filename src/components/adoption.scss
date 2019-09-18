@@ -1,9 +1,12 @@
 div {
 	.adoption {
-		height: 100vh;
+		height: 100%;
 		justify-content: center;
+		align-items: center;
 		display: flex;
-		color: pink;
+		flex-wrap: wrap;
+		color: black;
+
 		background-image: url("https://cdn.pixabay.com/photo/2019/08/19/07/45/pets-4415649__480.jpg");
 	}
 }

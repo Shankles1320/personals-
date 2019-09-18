@@ -19,6 +19,7 @@ class App extends Component {
 		});
 	}
 	render() {
+		console.log(this.props);
 		return (
 			<div className="App">
 				<header>
@@ -48,7 +49,7 @@ class App extends Component {
 							<li>
 								<button
 									onClick={() => {
-										axios.post("/api/logout").then((res) => {
+										axios.post("/api/goodbye").then((res) => {
 											console.log("logged out");
 											this.props.setUser(null);
 											this.props.history.push("/");
@@ -121,8 +122,8 @@ const mapDispatchToProps = {
 	setUser
 };
 const invokedConnect = connect(
-	mapDispatchToProps,
-	mapStateToProps
+	mapStateToProps,
+	mapDispatchToProps
 );
 
-export default withRouter(App, invokedConnect);
+export default withRouter(invokedConnect(App));

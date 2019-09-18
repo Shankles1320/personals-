@@ -6,6 +6,7 @@ const { register, login, logout, userSession } = require("./authCon");
 const app = express();
 const { SESSION_SECRET, CONNECTION_STRING } = process.env;
 app.use(express.json());
+const adoptionController = require("./adoptionController");
 app.use(
 	session({
 		secret: SESSION_SECRET,
@@ -26,6 +27,8 @@ app.post("/api/welcome", login);
 app.post("/api/registration", register);
 app.post("/api/goodbye", logout);
 app.get("/api/animal_data", userSession);
+
+app.get("/api/allanimals", adoptionController.getAllAnimals);
 
 const port = 4000;
 
