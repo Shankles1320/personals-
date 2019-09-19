@@ -31,7 +31,7 @@ app.get("/api/animal_data", userSession);
 app.get("/api/allanimals", adoptionController.getAllAnimals);
 app.post("/api/addAnimal", adoptionController.addAnimal);
 // app.put("/api/updateAnimal");
-// app.delete("/api/removeAnimal");
+app.delete("/api/removeAnimal/:id", adoptionController.removeAnimal);
 
 const port = 4000;
 

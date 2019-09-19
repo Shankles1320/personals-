@@ -10,7 +10,8 @@ export default class Adoption extends Component {
 			name: "",
 			breed: "",
 			description: "",
-			image: ""
+			image: "",
+			id: 0
 		};
 	}
 	componentDidMount() {
@@ -27,11 +28,22 @@ export default class Adoption extends Component {
 				image: this.state.image
 			})
 			.then((res) => {
-				console.log(res);
+				this.setState({
+					animal: res.data,
+					name: "",
+					breed: "",
+					description: "",
+					image: ""
+				});
 			});
 	};
+	removeAnimal = (id) => {
+		axios
+			.delete(`/api/removeAnimal/${id}`)
+			.then((res) => this.setState({ animal: res.data }));
+	};
 	render() {
-		const { name, breed, description, image } = this.state;
+		const { name, breed, description, image, id } = this.state;
 		const displayAnimal = this.state.animal.map((dog) => {
 			return (
 				<div>
@@ -42,13 +54,20 @@ export default class Adoption extends Component {
 					{dog.description}
 					<br />
 					<img src={dog.image} />
+
+					<button
+						onClick={() => {
+							this.removeAnimal(dog.id);
+						}}
+					>
+						Adopted!
+					</button>
 				</div>
 			);
 		});
 		return (
-			<div>
-				<h1 className="adoption">{displayAnimal}</h1>
-
+			<div className="adoption">
+				<button onClick={this.addAnimal}> Add an Animal</button>
 				<input
 					placeholder="Name"
 					value={name}
@@ -85,7 +104,8 @@ export default class Adoption extends Component {
 						})
 					}
 				/>
-				<button onClick={this.addAnimal}> Add an Animal</button>
+
+				<h1 className="adoption">{displayAnimal}</h1>
 			</div>
 		);
 	}
