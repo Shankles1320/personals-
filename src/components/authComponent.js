@@ -22,7 +22,7 @@ class AuthComponent extends Component {
 			username,
 			password
 		});
-		console.log(regUser);
+		// console.log(regUser);
 
 		this.props.setUser(regUser.data);
 	}
@@ -36,7 +36,7 @@ class AuthComponent extends Component {
 	}
 
 	render() {
-		console.log(this.props.user);
+		// console.log(this.props.user);
 		const { email, username, password, register } = this.state;
 		return (
 			<div>
@@ -66,15 +66,7 @@ class AuthComponent extends Component {
 								})
 							}
 						/>
-						{/* <input
-							placeholder="Username"
-							value={username}
-							onChange={(e) =>
-								this.setState({
-									username: e.target.value
-								})
-							}
-						/> */}
+
 						<input
 							placeholder="password"
 							value={password}

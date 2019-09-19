@@ -22,7 +22,7 @@ module.exports = {
 		const { email, password } = req.body;
 		const db = req.app.get("db");
 		const foundUser = await db.findUserByEmail(email);
-		console.log(foundUser);
+		// console.log(foundUser);
 		if (!foundUser.length) {
 			res.status(404).send("You are Not Registered");
 		} else {

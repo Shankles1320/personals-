@@ -91,7 +91,7 @@ class App extends Component {
 								render={() => {
 									return (
 										<div>
-											Adoption Path <Adoption />
+											<Adoption />
 										</div>
 									);
 								}}

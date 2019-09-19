@@ -29,6 +29,9 @@ app.post("/api/goodbye", logout);
 app.get("/api/animal_data", userSession);
 
 app.get("/api/allanimals", adoptionController.getAllAnimals);
+app.post("/api/addAnimal", adoptionController.addAnimal);
+// app.put("/api/updateAnimal");
+// app.delete("/api/removeAnimal");
 
 const port = 4000;
 

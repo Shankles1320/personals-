@@ -6,7 +6,11 @@ export default class Adoption extends Component {
 	constructor() {
 		super();
 		this.state = {
-			animal: []
+			animal: [],
+			name: "",
+			breed: "",
+			description: "",
+			image: ""
 		};
 	}
 	componentDidMount() {
@@ -14,9 +18,21 @@ export default class Adoption extends Component {
 			this.setState({ animal: res.data });
 		});
 	}
+	addAnimal = () => {
+		axios
+			.post("/api/addAnimal", {
+				name: this.state.name,
+				breed: this.state.breed,
+				description: this.state.description,
+				image: this.state.image
+			})
+			.then((res) => {
+				console.log(res);
+			});
+	};
 	render() {
+		const { name, breed, description, image } = this.state;
 		const displayAnimal = this.state.animal.map((dog) => {
-			console.log(dog);
 			return (
 				<div>
 					{dog.name}
@@ -32,6 +48,44 @@ export default class Adoption extends Component {
 		return (
 			<div>
 				<h1 className="adoption">{displayAnimal}</h1>
+
+				<input
+					placeholder="Name"
+					value={name}
+					onChange={(e) =>
+						this.setState({
+							name: e.target.value
+						})
+					}
+				/>
+				<input
+					placeholder="Breed"
+					value={breed}
+					onChange={(e) =>
+						this.setState({
+							breed: e.target.value
+						})
+					}
+				/>
+				<input
+					placeholder="Description"
+					value={description}
+					onChange={(e) =>
+						this.setState({
+							description: e.target.value
+						})
+					}
+				/>
+				<input
+					placeholder="image"
+					value={image}
+					onChange={(e) =>
+						this.setState({
+							image: e.target.value
+						})
+					}
+				/>
+				<button onClick={this.addAnimal}> Add an Animal</button>
 			</div>
 		);
 	}
