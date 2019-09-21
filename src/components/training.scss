@@ -1,7 +1,24 @@
-div {
+.training-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 50px;
+	width: 100%;
 	.training-title {
 		color: red;
 		justify-content: center;
+		align-items: center;
 		display: flex;
+		margin-top: 15px;
+	}
+	h1 {
+		width: 100%;
+		background-color: gray;
+		color: white;
+		font-size: 22px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
 	}
 }

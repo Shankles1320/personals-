@@ -42,8 +42,27 @@ export default class Adoption extends Component {
 			.delete(`/api/removeAnimal/${id}`)
 			.then((res) => this.setState({ animal: res.data }));
 	};
+	updateAnimal = (id) => {
+		axios
+			.put(`/api/updateAnimal/${id}`, {
+				id: this.state.id,
+				name: this.state.name,
+				breed: this.state.breed,
+				description: this.state.description,
+				image: this.state.image
+			})
+			.then((res) => {
+				this.setState({
+					animal: res.data,
+					name: "",
+					breed: "",
+					description: "",
+					image: ""
+				});
+			});
+	};
 	render() {
-		const { name, breed, description, image, id } = this.state;
+		const { name, breed, description, image } = this.state;
 		const displayAnimal = this.state.animal.map((dog) => {
 			return (
 				<div>
@@ -54,6 +73,53 @@ export default class Adoption extends Component {
 					{dog.description}
 					<br />
 					<img src={dog.image} />
+
+					<input
+						placeholder="Name"
+						value={name}
+						onChange={(e) =>
+							this.setState({
+								name: e.target.value
+							})
+						}
+					/>
+					<input
+						placeholder="Breed"
+						value={breed}
+						onChange={(e) =>
+							this.setState({
+								breed: e.target.value
+							})
+						}
+					/>
+					<input
+						placeholder="Description"
+						value={description}
+						onChange={(e) =>
+							this.setState({
+								description: e.target.value
+							})
+						}
+					/>
+					<input
+						placeholder="image"
+						value={image}
+						onChange={(e) =>
+							this.setState({
+								image: e.target.value
+							})
+						}
+					/>
+					<button
+						onClick={() => {
+							this.updateAnimal(dog.id);
+						}}
+					>
+						{" "}
+						Update Information
+					</button>
+					<br />
+					<br />
 
 					<button
 						onClick={() => {
@@ -67,7 +133,6 @@ export default class Adoption extends Component {
 		});
 		return (
 			<div className="adoption">
-				<button onClick={this.addAnimal}> Add an Animal</button>
 				<input
 					placeholder="Name"
 					value={name}
@@ -104,6 +169,7 @@ export default class Adoption extends Component {
 						})
 					}
 				/>
+				<button onClick={this.addAnimal}> Add an Animal</button>
 
 				<h1 className="adoption">{displayAnimal}</h1>
 			</div>

@@ -16,5 +16,13 @@ module.exports = {
 		db.removeAnimal(id).then((animal) => {
 			res.status(200).send(animal);
 		});
+	},
+	updateAnimal: (req, res) => {
+		const db = req.app.get("db");
+		const { id } = req.params;
+		const { name, breed, description, image } = req.body;
+		db.updateAnimal([id, name, breed, description, image]).then((animal) =>
+			res.status(200).send(animal)
+		);
 	}
 };

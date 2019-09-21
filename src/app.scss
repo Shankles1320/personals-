@@ -1,11 +1,11 @@
 header {
-	height: 100px;
+	height: 250px;
 	background-color: blue;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
-	max-width: 1450px;
+	max-width: 3000px;
 	width: 100%;
 	margin: 0 auto;
 	font-size: 22px;
@@ -23,7 +23,7 @@ header {
 					transition: 1s;
 					&:hover {
 						color: red;
-						transform: rotate(10deg);
+						transform: rotate(20deg);
 					}
 				}
 			}

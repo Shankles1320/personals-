@@ -7,12 +7,14 @@ import { setUser } from "./ducks/reducer";
 import axios from "axios";
 import SocialTime from "./components/social_time";
 import Training from "./components/training";
-import "./App.css";
 import Adoption from "./components/adoption";
+import Donations from "./components/donation";
+import Volunteer from "./components/volunteer";
 
 class App extends Component {
 	componentDidMount() {
 		axios.get("/api/animal_data").then((res) => {
+			console.log(res.data);
 			if (res.data) {
 				this.props.setUser(res.data);
 			}
@@ -81,7 +83,7 @@ class App extends Component {
 								render={() => {
 									return (
 										<div className="background">
-											Training Path <Training />
+											<Training />
 										</div>
 									);
 								}}
@@ -99,13 +101,21 @@ class App extends Component {
 							<Route
 								path="/donations"
 								render={() => {
-									return <div>donations Path</div>;
+									return (
+										<div>
+											<Donations />
+										</div>
+									);
 								}}
 							/>
 							<Route
 								path="/volunteer"
 								render={() => {
-									return <div>Volunteer Path</div>;
+									return (
+										<div>
+											<Volunteer />
+										</div>
+									);
 								}}
 							/>
 						</>

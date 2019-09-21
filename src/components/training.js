@@ -4,11 +4,11 @@ import "./training.scss";
 export default class Training extends Component {
 	render() {
 		return (
-			<div>
+			<div className="training-container">
 				<br />
 				<br />
 				<h3 className="training-title">
-					Helping Your Dog With Separation Anxiety 09/08/2016 by Jessica Rollins
+					Helping Your Dog With Separation Anxiety
 				</h3>
 				<h1>
 					Dogs are very social, and when they are alone, they can sometimes
@@ -66,10 +66,6 @@ export default class Training extends Component {
 					healthiest diet that you can afford. Check out the products we offer
 					to help your anxious dog! Happy Training! -Jess
 				</h1>
-				<br />
-				<br />
-				<br />
-				<br />
 				<h3 className="training-title">Train Your Dog to Stop Digging</h3>
 				<h1>
 					Your dog may be digging for any number of reasons - the main one being

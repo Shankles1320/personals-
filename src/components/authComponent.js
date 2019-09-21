@@ -33,7 +33,13 @@ class AuthComponent extends Component {
 			password
 		});
 		this.props.setUser(logUser.data);
+		console.log("hello", logUser);
+		if (logUser.data.email !== "") {
+			this.props.history.push("/adoption");
+		}
 	}
+
+	// this.props.history.push    pushs you to another page after login
 
 	render() {
 		// console.log(this.props.user);
