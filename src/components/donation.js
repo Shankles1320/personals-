@@ -1,6 +1,5 @@
 import React from "react";
 import "./donations.scss";
-import ReactDom from "react-dom";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -29,14 +28,13 @@ export function Donation() {
 		description: "Toys for the animals to play with"
 	});
 
-	async function handleToken(bowls, beds, food, toys, token, email) {
+	async function handleToken(bowls, beds, food, toys, token) {
 		const response = await axios.post("/api/checkout", {
 			bowls,
 			beds,
 			food,
 			toys,
-			token,
-			email
+			token
 		});
 		const { status } = response.data;
 		console.log("Response:", response.data);

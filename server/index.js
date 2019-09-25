@@ -68,7 +68,8 @@ app.post("/api/checkout", async (req, res) => {
 	let status;
 	try {
 		const { bowls, beds, food, toys, token } = req.body;
-		console.log(bowls, beds, food, toys);
+		// console.log("this is the token: ", token)
+		// console.log(bowls, beds, food, toys);
 		const customer = await stripe.customers.create({
 			email: token.email,
 			source: token.id
