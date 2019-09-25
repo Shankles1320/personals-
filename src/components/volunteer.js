@@ -63,7 +63,7 @@ export default class Volunteer extends Component {
 	};
 
 	render() {
-		const { app_date, app_time, name, description, isPopulated } = this.state;
+		const { app_date, app_time, name, description } = this.state;
 		const displayAppointments = this.state.app.map((Apps) => {
 			return (
 				<div className="appPage">
@@ -77,6 +77,19 @@ export default class Volunteer extends Component {
 						{Apps.description}
 					</div>
 
+					<button
+						onClick={() => {
+							this.deleteApp(Apps.id);
+						}}
+					>
+						Cancel Appointment
+					</button>
+				</div>
+			);
+		});
+		return (
+			<div className="Schedule">
+				<div className="inputs">
 					<input
 						placeholder="Date"
 						value={app_date}
@@ -113,68 +126,10 @@ export default class Volunteer extends Component {
 							})
 						}
 					/>
-					<button
-						onClick={() => {
-							this.updateApp(Apps.id);
-						}}
-					>
-						{" "}
-						Update Appointment
-					</button>
-					<br />
-					<br />
-
-					<button
-						onClick={() => {
-							this.deleteApp(Apps.id);
-						}}
-					>
-						Cancel Appointment
-					</button>
+					<button onClick={this.addApp}> Add Appointment</button>
 				</div>
-			);
-		});
-		return (
-			<div className="Schedule">
-				<input
-					placeholder="Date"
-					value={app_date}
-					onChange={(e) =>
-						this.setState({
-							app_date: e.target.value
-						})
-					}
-				/>
-				<input
-					placeholder="Time"
-					value={app_time}
-					onChange={(e) =>
-						this.setState({
-							app_time: e.target.value
-						})
-					}
-				/>
-				<input
-					placeholder="Name"
-					value={name}
-					onChange={(e) =>
-						this.setState({
-							name: e.target.value
-						})
-					}
-				/>
-				<input
-					placeholder="Description"
-					value={description}
-					onChange={(e) =>
-						this.setState({
-							description: e.target.value
-						})
-					}
-				/>
-				<button onClick={this.addApp}> Add Appointment</button>
 
-				{displayAppointments}
+				<div className="apps">{displayAppointments}</div>
 			</div>
 		);
 	}

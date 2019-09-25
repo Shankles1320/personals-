@@ -1,5 +1,25 @@
-input {
-	justify-content: center;
-	align-items: center;
-	display: flex;
+.Login {
+	form {
+		button {
+			margin: 0 auto;
+			justify-content: center, space-between;
+			align-items: center;
+			display: flex;
+		}
+		input {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			margin: 0 auto;
+		}
+	}
+	.random {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.text {
+	background-color: gray;
 }

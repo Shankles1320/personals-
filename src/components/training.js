@@ -94,6 +94,83 @@ export default class Training extends Component {
 					in the "wrong" area, she will get a calm Time Out, and if she digs in
 					the "right" area she will get treats and praise.
 				</h1>
+				<br />
+				<h1>
+					<img
+						src="https://www.animalhealthfoundation.net/blog/wp-content/uploads/2019/08/Which-Dog-Is-Relaxed.jpg"
+						alt="smiley face"
+					/>
+				</h1>
+				<h3 className="training-title">Dog Training Tips</h3>
+				<h1>
+					"Any time you are with your dog, one of you is being trained. It is
+					better to be the trainer than the trainee." - Steve White <br />
+					<br />
+					Treats: Make "˜em small (just enough to taste)! This is the easiest
+					way to communicate to your dog that he did something right, (but we
+					will use other methods too). The dog should believe that you could
+					have a treat at any time and it just might be something REALLY
+					AWESOME! I strongly suggest putting a treat container in the main
+					rooms of the house so as not to miss any good opportunities for
+					reinforcement and always carry treats on walks. Fresh treats such as
+					meat or cheese are useful when working in more distracting
+					environments. Don't give it away for free: get some training out of
+					his feeding, his walks and playtime.
+					<br />
+					ALL GOOD THINGS COME FROM YOU: By asking for good behavior before
+					giving your dog the things he likes you can demonstrate your
+					leadership without using force. REMEMBER: your attention is a REWARD
+					(sometimes even if you are yelling!).
+					<br />
+					MYTH: Dogs should behave out of a selfless "desire to please" and
+					respect, and not for treats. This myth has hurt a lot of dogs, and
+					trainers who don't use reward-based training are using punishment
+					(choke chains) to motivate the dogs and not really "respect". We have
+					to deliberately demonstrate to the dog WHY he should listen to us (we
+					have the food, the toys and the fun!). Think about what you want your
+					dog to do rather than what you don't want him to do. Then prevent him
+					doing what you don't want and reward him doing what you do want. Get
+					it? Teach him some words to help communicate what you want such as
+					"leave it", and "drop it". USE PUNISHMENTS VERY CAREFULLY (they don't
+					usually work). Never strike your dog.
+					<br />
+					Train in 5 minute sessions, 3 times (or more, go nuts!) per day. Also
+					be aware that you are always teaching your dog how to behave by your
+					response to his behavior. Run your dog every day until her tongue is
+					hanging out. Twice if she's still got too many "ants in the pants".
+					<br />
+					HELP HIM LIVE LONGER. Feed your dog a premium human grade diet such as
+					Innova or Wellness with fresh supplements. Avoid over vaccinating and
+					excess flea and tick repellent chemicals. Clean teeth and ears once a
+					week, bathe and trim nails once per month. All dogs HAVE THE POTENTIAL
+					TO bite. That's why it's important to teach your dog to be comfortable
+					in all situations and to be gentle with his mouth.
+					<br />
+					MYTH: "Kids and dogs are great together". Actually kids are the most
+					likely to be bitten (and this happens TOO often) because they
+					accidentally do things that frighten dogs or they act like "prey".
+					Never leave a dog and child unsupervised. Teach children not to
+					approach a dog that is unknown to them, or when an adult is not
+					present. your dog is always learning (and so you are always
+					teaching/training). You will need to refresh the cues that you teach
+					your dog throughout her lifetime. Happy Training!
+				</h1>
+				<br />
+				<br />
+				<br />
+				<a href="https://www.yourpurebredpuppy.com">
+					https://www.yourpurebredpuppy.com
+				</a>
+				<br />
+				<a href="www.all-americank-9.com/Off-Leash/Dog-Training‎">
+					www.all-americank-9.com/Off-Leash/Dog-Training‎
+				</a>
+				<br />
+				<a href="www.animalhealthfoundation.net/‎">
+					www.animalhealthfoundation.net/‎
+				</a>
+				<br />
+				<a href="www.vetstreet.com">www.vetstreet.com</a>
 			</div>
 		);
 	}

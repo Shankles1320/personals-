@@ -11,7 +11,11 @@ class AuthComponent extends Component {
 			email: "",
 			password: "",
 			username: "",
-			register: true
+			register: true,
+			animal: [],
+			name: "",
+			breed: "",
+			image: ""
 		};
 	}
 
@@ -39,13 +43,38 @@ class AuthComponent extends Component {
 		}
 	}
 
+	componentDidMount = () => {
+		axios.get("/api/random").then((res) => {
+			const animals = res.data;
+			animals.sort(function() {
+				return 0.5 - Math.random();
+			});
+			this.setState({ animal: animals.slice(0, 3) });
+		});
+	};
+
 	// this.props.history.push    pushs you to another page after login
 
 	render() {
 		// console.log(this.props.user);
+
 		const { email, username, password, register } = this.state;
+
+		const displayAnimal = this.state.animal.map((dog) => {
+			return (
+				<div className="text">
+					{dog.name}
+					<br />
+					{dog.breed}
+					<br />
+
+					<img src={dog.image} />
+				</div>
+			);
+		});
+
 		return (
-			<div>
+			<div className="Login">
 				{
 					<form
 						onSubmit={(e) => {
@@ -96,11 +125,14 @@ class AuthComponent extends Component {
 						<button>{register ? "register" : "Login"}</button>
 					</form>
 				}
-				<div></div>
+				<br />
+				<br />
+
+				<div className="random">{displayAnimal}</div>
 			</div>
 		);
 	}
-}
+} // end of class
 
 function mapStateToProps(reduxState) {
 	return reduxState;

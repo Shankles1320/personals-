@@ -7,5 +7,19 @@
 		justify-content: center;
 		display: flex;
 		align-items: center;
+		border-radius: 15%;
+	}
+}
+.Schedule {
+	.inputs {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	.apps {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
 	}
 }

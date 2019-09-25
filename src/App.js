@@ -8,8 +8,8 @@ import axios from "axios";
 import SocialTime from "./components/social_time";
 import Training from "./components/training";
 import Adoption from "./components/adoption";
-import Donations from "./components/donation";
 import Volunteer from "./components/volunteer";
+import { Donation } from "./components/donation";
 
 class App extends Component {
 	componentDidMount() {
@@ -103,7 +103,7 @@ class App extends Component {
 								render={() => {
 									return (
 										<div>
-											<Donations />
+											<Donation />
 										</div>
 									);
 								}}
@@ -121,6 +121,7 @@ class App extends Component {
 						</>
 					)}
 				</Switch>
+				<h1>Hello world</h1>
 			</div>
 		);
 	}

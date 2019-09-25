@@ -72,7 +72,7 @@ export default class Adoption extends Component {
 					<br />
 					{dog.description}
 					<br />
-					<img src={dog.image} />
+					<img className="photo" src={dog.image} />
 
 					<input
 						placeholder="Name"

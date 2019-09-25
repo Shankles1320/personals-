@@ -11,14 +11,26 @@
 		align-items: center;
 		display: flex;
 		margin-top: 15px;
+		font-size: 28px;
 	}
 	h1 {
-		width: 100%;
+		// width: 100%;
 		background-color: gray;
 		color: white;
 		font-size: 22px;
 		justify-content: center;
 		display: flex;
 		align-items: center;
+		border-radius: 2%;
+		opacity: 0.8;
+	}
+	a {
+		background-color: gray;
+		color: blue;
+		font-size: 22px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		border-radius: 2%;
 	}
 }

@@ -49,5 +49,9 @@ module.exports = {
 	},
 	userSession: (req, res, next) => {
 		res.status(200).send(req.session.user);
+	},
+	getAllAnimals: (req, res) => {
+		const db = req.app.get("db");
+		db.allAnimals().then((animal) => res.status(200).send(animal));
 	}
 };
