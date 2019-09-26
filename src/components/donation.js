@@ -49,6 +49,10 @@ export function Donation() {
 		<div className="container">
 			<h1>{bowls.name}</h1>
 			<h3> {bowls.price}</h3>
+			<img
+				src="https://cdn.pixabay.com/photo/2019/05/07/11/38/fodder-4185709__340.png"
+				alt="smiley face"
+			/>
 			<StripeCheckout
 				stripeKey="pk_test_SIgrvHNLotnOaiDOi8H19to500Q4gOb6A8"
 				token={handleToken}
@@ -58,6 +62,10 @@ export function Donation() {
 			<br />
 			<h1>{beds.name}</h1>
 			<h3> {beds.price}</h3>
+			<img
+				src="https://cdn.pixabay.com/photo/2017/01/07/17/56/dog-1961112__340.jpg"
+				alt="smiley face"
+			/>
 			<StripeCheckout
 				stripeKey="pk_test_SIgrvHNLotnOaiDOi8H19to500Q4gOb6A8"
 				token={handleToken}
@@ -67,6 +75,10 @@ export function Donation() {
 			<br />
 			<h1>{food.name}</h1>
 			<h3> {food.price}</h3>
+			<img
+				src="https://image.shutterstock.com/image-photo/pet-food-packets-store-260nw-438115045.jpg"
+				alt="smiley face"
+			/>
 			<StripeCheckout
 				stripeKey="pk_test_SIgrvHNLotnOaiDOi8H19to500Q4gOb6A8"
 				token={handleToken}
@@ -76,6 +88,10 @@ export function Donation() {
 			<br />
 			<h1>{toys.name}</h1>
 			<h3> {toys.price}</h3>
+			<img
+				src="https://image.shutterstock.com/image-photo/golden-retriever-dog-puppy-playing-260nw-701554054.jpg"
+				alt="smiley face"
+			/>
 			<StripeCheckout
 				stripeKey="pk_test_SIgrvHNLotnOaiDOi8H19to500Q4gOb6A8"
 				token={handleToken}

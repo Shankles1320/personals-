@@ -5,7 +5,7 @@ import authComponent from "./components/authComponent";
 import { connect } from "react-redux";
 import { setUser } from "./ducks/reducer";
 import axios from "axios";
-import SocialTime from "./components/social_time";
+import { Locations } from "./components/locations";
 import Training from "./components/training";
 import Adoption from "./components/adoption";
 import Volunteer from "./components/volunteer";
@@ -32,7 +32,7 @@ class App extends Component {
 								<Link to="/">Home</Link>
 							</li>
 							<li>
-								<Link to="/social_time">Social Time</Link>
+								<Link to="/Locations">Locations</Link>
 							</li>
 							<li>
 								<Link to="/training">Training</Link>
@@ -69,11 +69,11 @@ class App extends Component {
 					{this.props.user && (
 						<>
 							<Route
-								path="/social_time"
+								path="/locations"
 								render={() => {
 									return (
 										<div className="background">
-											Social Time Path <SocialTime />
+											<Locations />
 										</div>
 									);
 								}}
@@ -121,7 +121,6 @@ class App extends Component {
 						</>
 					)}
 				</Switch>
-				<h1>Hello world</h1>
 			</div>
 		);
 	}
