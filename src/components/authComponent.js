@@ -63,12 +63,14 @@ class AuthComponent extends Component {
 		const displayAnimal = this.state.animal.map((dog) => {
 			return (
 				<div className="text">
-					{dog.name}
-					<br />
-					{dog.breed}
-					<br />
+					<div className="info">
+						{dog.name}
+						<br />
+						{dog.breed}
+						<br />
+					</div>
 
-					<img src={dog.image} />
+					<img className="image" src={dog.image} />
 				</div>
 			);
 		});

@@ -5,13 +5,27 @@ import authComponent from "./components/authComponent";
 import { connect } from "react-redux";
 import { setUser } from "./ducks/reducer";
 import axios from "axios";
-import { Locations } from "./components/locations";
+import Locations from "./components/locations";
 import Training from "./components/training";
 import Adoption from "./components/adoption";
 import Volunteer from "./components/volunteer";
 import { Donation } from "./components/donation";
 
 class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			toggle: false
+		};
+	}
+
+	toggleSideBar = () => {
+		this.setState((prevState) => {
+			return {
+				toggle: !prevState.toggle
+			};
+		});
+	};
 	componentDidMount() {
 		axios.get("/api/animal_data").then((res) => {
 			console.log(res.data);
@@ -25,14 +39,17 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header>
-					<div className="Dogvengers">Dogvengers</div>
-					<nav>
+					<div className="Dogvengers">Rescue</div>
+					<button onClick={this.toggleSideBar} className="button">
+						{this.state.toggle ? "Menu" : "Menu"}
+					</button>
+					<nav className={this.state.toggle ? "show" : ""}>
 						<ul>
 							<li>
 								<Link to="/">Home</Link>
 							</li>
 							<li>
-								<Link to="/Locations">Locations</Link>
+								<Link to="/locations">Locations</Link>
 							</li>
 							<li>
 								<Link to="/training">Training</Link>

@@ -17,9 +17,15 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 }
 
 .text {
 	background-color: gray;
+	background-size: auto;
+	border-radius: 10%;
+}
+.image {
+	border-radius: 10%;
 }

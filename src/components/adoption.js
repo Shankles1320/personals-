@@ -66,12 +66,14 @@ export default class Adoption extends Component {
 		const displayAnimal = this.state.animal.map((dog) => {
 			return (
 				<div>
-					{dog.name}
-					<br />
-					{dog.breed}
-					<br />
-					{dog.description}
-					<br />
+					<div className="info">
+						{dog.name}
+						<br />
+						{dog.breed}
+						<br />
+						{dog.description}
+						<br />
+					</div>
 					<img className="photo" src={dog.image} />
 
 					<input
@@ -118,7 +120,6 @@ export default class Adoption extends Component {
 						{" "}
 						Update Information
 					</button>
-					<br />
 					<br />
 
 					<button

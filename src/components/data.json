@@ -1,0 +1,513 @@
+{
+	"type": "FeatureCollection",
+	"crs": {
+		"type": "name",
+		"properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+	},
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 960,
+				"FACILITYID": 28014,
+				"NAME": "Friends of Animal Care & Control",
+				"ADDRESS": "3905 N 7th Ave #7611, Phoenix, AZ 85013",
+				"EMAIL": "azfriendsofanimals.org",
+				"PHONE": "(602) 882-8627",
+				"OPEN": null,
+				"NOTES": "Animal protection organization",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.493673, -112.082779]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1219,
+				"FACILITYID": 28001,
+				"NAME": "Meoowz ResQ-Phoenix",
+				"ADDRESS": "1490 Youville Drive",
+				"EMAIL": "meoowzresq.org",
+				"PHONE": null,
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.46614, -112.011995]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1157,
+				"FACILITYID": 28002,
+				"NAME": "Arizona Animal Welfare League & SPCA",
+				"ADDRESS": "25 N 40th St, Phoenix, AZ 85034",
+				"EMAIL": "aawl.org",
+				"PHONE": "602-273-6852",
+				"OPEN": null,
+				"NOTES": "Pet adoption service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.449518, -111.994707]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 9,
+				"FACILITYID": 28006,
+				"NAME": "Arizona Humane Society Campus for Compassion",
+				"ADDRESS": "1521 W Dobbins Rd, Phoenix, AZ 85041",
+				"EMAIL": "azhumane.org",
+				"PHONE": "(602) 997-7585",
+				"OPEN": null,
+				"NOTES": "Pet adoption service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.363677, -112.092398]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Saving One Life",
+				"ADDRESS": "6426 S McClintock Dr, Tempe, AZ 85283",
+				"EMAIL": "savingonelife.org",
+				"PHONE": "(602) 715-2700",
+				"OPEN": null,
+				"NOTES": "Pet adoption service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.364019, -111.912169]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Maricopa County Animal Care and Control",
+				"ADDRESS": "2630 W Rio Salado Pkwy, Mesa, AZ 85201",
+				"EMAIL": "maricopa.gov",
+				"PHONE": "(602) 506-7387",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.431188, -111.88895]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Desert Tails Shelter",
+				"ADDRESS": "6423 E Thomas Rd, Scottsdale, AZ 85251",
+				"EMAIL": "deserttailsshelter.org",
+				"PHONE": null,
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.47797, -111.939369]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Friends For Life Animal Rescue",
+				"ADDRESS": "952 W Melody Ave, Gilbert, AZ 85233",
+				"EMAIL": "azfriends.org",
+				"PHONE": "(480) 497-8296",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.377005, -111.80998]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Lost Our Home Pet Rescue",
+				"ADDRESS": "2323 S Hardy Dr, Tempe, AZ 85282",
+				"EMAIL": "lostourhome.org",
+				"PHONE": "(602) 445-7387",
+				"OPEN": null,
+				"NOTES": "Pet adoption service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.405011, -111.951284]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Follow Your Heart Animal Hospital",
+				"ADDRESS": "446 N Higley Rd #103, Mesa, AZ 85205",
+				"EMAIL": "fyhanimalhospital.org",
+				"PHONE": "(480) 867-1898",
+				"OPEN": null,
+				"NOTES": "Veterinarian",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.42456, -111.719361]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "K-9 Friends",
+				"ADDRESS": "Scottsdale, AZ 85251",
+				"EMAIL": null,
+				"PHONE": null,
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.42456, -111.719361]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Sheriff MASH Unit",
+				"ADDRESS": "102 W Madison St, Phoenix, AZ 85003",
+				"EMAIL": "mcso.org",
+				"PHONE": "(602) 876-1212",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.447358, -112.074466]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Arizona Small Dog Rescue",
+				"ADDRESS": "1102 W Hatcher Rd, Phoenix, AZ 85021",
+				"EMAIL": "azsmalldog.org",
+				"PHONE": "(602) 944-2440",
+				"OPEN": null,
+				"NOTES": "Animal rescue service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.572429, -112.085874]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Home Fur Good",
+				"ADDRESS": "10220 N 32nd St, Phoenix, AZ 85028",
+				"EMAIL": "homefurgood.org",
+				"PHONE": "(602) 971-1334",
+				"OPEN": null,
+				"NOTES": "Animal rescue service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.572429, -112.085874]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "4 Paws Rescue Inc",
+				"ADDRESS": "10807 N 96th Ave #1, Peoria, AZ 85345",
+				"EMAIL": "4pawsrescue.org",
+				"PHONE": "(623) 773-2246",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.572429, -112.085874]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Sun Valley Animal Shelter",
+				"ADDRESS": "7150 N 110th Ave, Glendale, AZ 85307",
+				"EMAIL": "sunvalleypets.org",
+				"PHONE": "(623) 872-7941",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.572429, -112.085874]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Maricopa County Animal Care and Control",
+				"ADDRESS": "2500 S 27th Ave, Phoenix, AZ 85009",
+				"EMAIL": "maricopa.gov",
+				"PHONE": "(602) 506-7387",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.42614, -112.117061]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Foothills Animal Rescue",
+				"ADDRESS": "10197 E Bell Rd, Scottsdale, AZ 85260",
+				"EMAIL": "foothillsanimal.org",
+				"PHONE": "(480) 488-9890",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.643566, -111.861362]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "HALO Animal Rescue",
+				"ADDRESS": "3227 E Bell Rd Ste D151, Phoenix, AZ 85032",
+				"EMAIL": "halorescue.org",
+				"PHONE": "(602) 971-9222",
+				"OPEN": null,
+				"NOTES": "Animal rescue service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.640468, -112.011502]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Animals Benefit Club of Az",
+				"ADDRESS": "3111 E St John Rd, Phoenix, AZ 85032",
+				"EMAIL": "animalsbenefitclub.com",
+				"PHONE": "(602) 867-2169",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.647349, -112.014983]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Coopers Chance Animal Rescue",
+				"ADDRESS": "Chandler, AZ 85249",
+				"EMAIL": null,
+				"PHONE": null,
+				"OPEN": null,
+				"NOTES": "Animal rescue service",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [33.22045, -111.818589]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Supporting Rescued Pets",
+				"ADDRESS": "345 N Arizona Ave, Prescott, AZ 86301",
+				"EMAIL": null,
+				"PHONE": "(928) 776-8050",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [34.563237, -112.451441]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Animal Shelter",
+				"ADDRESS": "3010 W Houser Rd, Eloy, AZ 85131",
+				"EMAIL": "eloyaz.gov",
+				"PHONE": "(520) 466-4152",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [32.783957, -111.601282]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Pima Paws for Life",
+				"ADDRESS": "2555 W Zinnia Ave, Tucson, AZ 85705",
+				"EMAIL": "epimapawsforlife.org",
+				"PHONE": "(520) 867-1193",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [32.291988, -111.021577]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Pima Animal Care Center (Animal Shelter)",
+				"ADDRESS": "4000 N Silverbell Rd, Tucson, AZ 85745",
+				"EMAIL": "pimaanimalcare.org",
+				"PHONE": "(520) 724-5900",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [32.282104, -111.032559]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Humane Society of Southern Arizona Affordable Spay & Neuter Clinic",
+				"ADDRESS": "635 W Roger Rd, Tucson, AZ 85705",
+				"EMAIL": "hssaz.org",
+				"PHONE": "(520) 881-0321",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [32.280644, -110.981604]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "PAWSitively CATS",
+				"ADDRESS": "1145 N Woodland Ave, Tucson, AZ 85712",
+				"EMAIL": "pawsitivelycats.org",
+				"PHONE": "(520) 289-2747",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [32.238834, -110.877197]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"SHELTER_ID": 1160,
+				"FACILITYID": 28007,
+				"NAME": "Hermitage Cat Shelter",
+				"ADDRESS": "5278 E 21st St, Tucson, AZ 85711",
+				"EMAIL": "hermitagecatshelter.org",
+				"PHONE": "(520) 571-7839",
+				"OPEN": null,
+				"NOTES": "Animal shelter",
+				"MODIFIED_D": "2019/09/29"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [32.21, -110.87954]
+			}
+		}
+	]
+}
