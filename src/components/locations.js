@@ -15,7 +15,7 @@ function Map() {
 	return (
 		<GoogleMap
 			defaultZoom={11}
-			defaultCenter={{ lat: 33.448376, lng: -112.074036 }}
+			defaultCenter={{ lat: 33.42551, lng: -111.940002 }}
 		>
 			{shelterData.features.map((shelter) => (
 				<Marker

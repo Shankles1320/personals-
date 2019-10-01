@@ -158,19 +158,24 @@ export default class Training extends Component {
 				<br />
 				<br />
 				<br />
-				<a href="https://www.yourpurebredpuppy.com">
+				<a href="https://www.yourpurebredpuppy.com" target="_blank">
 					https://www.yourpurebredpuppy.com
 				</a>
 				<br />
-				<a href="www.all-americank-9.com/Off-Leash/Dog-Training‎">
+				<a
+					href="www.all-americank-9.com/Off-Leash/Dog-Training‎"
+					target="_blank"
+				>
 					www.all-americank-9.com/Off-Leash/Dog-Training‎
 				</a>
 				<br />
-				<a href="www.animalhealthfoundation.net/‎">
+				<a href="www.animalhealthfoundation.net/‎" target="_blank">
 					www.animalhealthfoundation.net/‎
 				</a>
 				<br />
-				<a href="www.vetstreet.com">www.vetstreet.com</a>
+				<a href="www.vetstreet.com" target="_blank">
+					www.vetstreet.com
+				</a>
 			</div>
 		);
 	}
