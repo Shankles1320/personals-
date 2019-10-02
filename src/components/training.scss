@@ -5,19 +5,20 @@
 	flex-direction: column;
 	margin-top: 50px;
 	width: 100%;
+	font-family: "Philosopher", sans-serif;
 	.training-title {
-		color: red;
+		color: white;
 		justify-content: center;
 		align-items: center;
 		display: flex;
 		margin-top: 15px;
 		font-size: 28px;
+		font-weight: bold;
 	}
 	h1 {
-		// width: 100%;
 		background-color: gray;
 		color: white;
-		font-size: 22px;
+		font-size: 24px;
 		justify-content: center;
 		display: flex;
 		align-items: center;
